@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Login</h1>
+      <div>
+        <input
+          type="text"
+          class="inp"
+          id="loginName"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <br /><br />
+        <input
+          type="password"
+          class="inp"
+          id="loginPassword"
+          name="password"
+          placeholder="Password"
+          required
+          maxlength="16"
+          minlength="4"
+        />
+        <br /><br /><br />
+        <button class="btn" onclick="login()">Login</button> <br /><br />
+        <p>
+          Don't have an account? Pleace
+          <a class="link" href="signup.html">Sign-Up</a>
+        </p>
+      </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

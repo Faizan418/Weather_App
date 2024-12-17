@@ -1,3 +1,22 @@
+let currentUser = localStorage.getItem("currentUser");
+const welcomeMessage = document.getElementById("welcomeMessage");
+
+if (currentUser) {
+  welcomeMessage.innerText = `Welcome, ${currentUser}!`;
+} else {
+  alert("No user loged in. Redirecting to Login.");
+  window.location.href = "login.html";
+}
+
+function logout() {
+  localStorage.removeItem("currentUser");
+  alert("User logged out successfully");
+  window.location.href = "login.html";
+}
+
+
+// --------------------------------------------------------------------
+
 async function getWeather() {
   let city = document.getElementById("city").value;
   let APIKey = "f7f8d983867a6bcd56203e846a3b51bc";
