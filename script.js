@@ -14,7 +14,6 @@ function logout() {
   window.location.href = "login.html";
 }
 
-
 // --------------------------------------------------------------------
 
 async function getWeather() {

@@ -10,7 +10,6 @@ function login() {
   );
 
   if (found) {
-    // alert("Login successful");
     Swal.fire({
       icon: "success",
       title: "Login Successfully",
@@ -20,12 +19,10 @@ function login() {
     localStorage.setItem("currentUser", name);
     window.location.href = "index.html";
   } else {
-    // alert("Invalid credentials");
     Swal.fire({
       icon: "error",
       title: "Oops...",
       text: "Invalid Credentials",
-      // footer: '<a href="#">Why do I have this issue?</a>'
     });
   }
 }
